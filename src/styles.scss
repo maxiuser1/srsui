@@ -1,1 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+html,
+body {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    color: var(--sapTextColor);
+}
+
+a {
+    color: var(--sapLinkColor);
+}
+
+*,
+::after,
+::before {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    background-color: var(--sapBackgroundColor);
+}
