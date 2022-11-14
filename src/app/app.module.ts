@@ -9,21 +9,18 @@ import { ThemingService, ThemingModule } from '@fundamental-ngx/core/theming';
 import { RouterModule } from '@angular/router';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { PlatformDynamicPageModule } from '@fundamental-ngx/platform/dynamic-page';
-import { BarModule } from '@fundamental-ngx/core/bar';
-import { ToolbarModule } from '@fundamental-ngx/core/toolbar';
-import { PlatformButtonModule } from '@fundamental-ngx/platform/button';
-import { DynamicPageModule } from '@fundamental-ngx/core/dynamic-page';
-import { ButtonModule } from '@fundamental-ngx/core/button';
-import { IconModule } from '@fundamental-ngx/core/icon';
+import { FormularioComponent } from './components/cabecera/formulario/formulario.component';
+import { sharedCoreModules } from './utils/sharedCoreModules';
+import { sharedPlatformModules } from './utils/sharedPlatformModules';
+import { ReactiveFormsModule } from '@angular/forms';
+import { TablaComponent } from './components/burbujas/prefiltro/tabla/tabla.component';
 @NgModule({
-  declarations: [AppComponent, ProcesadorComponent],
+  declarations: [AppComponent, ProcesadorComponent, FormularioComponent, TablaComponent],
   imports: [
     PlatformDynamicPageModule,
-    BarModule,
-    PlatformButtonModule,
-    ToolbarModule,
-    ButtonModule,
-    IconModule,
+    ReactiveFormsModule,
+    sharedCoreModules,
+    sharedPlatformModules,
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,

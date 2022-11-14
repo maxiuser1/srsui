@@ -1,0 +1,21 @@
+<fdp-form-group [formGroup]="form" columnLayout="XL2-L2-M2-S1">
+
+
+    <fdp-form-field label="Tipo de persona" [column]="1" [rank]="1">
+        <fd-segmented-button formControlName="tipoPersona">
+            <button fd-button label="Natural" value="N"></button>
+            <button fd-button label="Jurídica" value="J"></button>
+        </fd-segmented-button>
+    </fdp-form-field>
+
+    <fdp-form-field label="Tipo de operación" [column]="1" [rank]="2">
+        <fd-select fd-toolbar-item placeholder="Seleccione" formControlName="tipoOperacion">
+            <li fd-option value="F">Financiamiento</li>
+            <li fd-option value="D">Descuento</li>
+            <li fd-option value="">Descuento</li>
+            <li fd-option value="J">Descuento</li>
+        </fd-select>
+    </fdp-form-field>
+
+
+</fdp-form-group>

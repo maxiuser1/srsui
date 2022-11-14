@@ -21,3 +21,13 @@ body {
     margin: 0;
     background-color: var(--sapBackgroundColor);
 }
+
+.fd-select-custom-class{
+    min-width: 100%;
+}
+
+.fd-tabs__tag{
+    &::before{
+        display: none;
+    }
+}
