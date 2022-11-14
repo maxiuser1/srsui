@@ -41,6 +41,8 @@
               "src/styles.scss",
               "./node_modules/@fundamental-ngx/core/styles/fundamental-ngx-core.css",
               "./node_modules/fundamental-styles/dist/fonts/sap_fonts.css",
+              "./node_modules/@sap-theming/theming-base-content/content/Base/baseLib/sap_horizon_dark/css_variables.css",
+              "./node_modules/fundamental-styles/dist/theming/sap_horizon_dark.css",
               {
                 "input": "./node_modules/fundamental-styles/dist/fonts/sap_fiori_3_fonts.css",
                 "inject": false,

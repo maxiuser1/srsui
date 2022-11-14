@@ -27,7 +27,6 @@ import { IconModule } from '@fundamental-ngx/core/icon';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ThemingModule.withConfig({ defaultTheme: 'sap_horizon_dark' }),
     RouterModule.forRoot([]),
     NoopAnimationsModule,
   ],
@@ -35,7 +34,5 @@ import { IconModule } from '@fundamental-ngx/core/icon';
   bootstrap: [AppComponent],
 })
 export class AppModule {
-  constructor(themingService: ThemingService) {
-    themingService.init();
-  }
+  constructor() {}
 }
